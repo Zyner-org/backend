@@ -1,12 +1,12 @@
 const express = require("express");
 
-const app = express();
+const api = express();
 const port = 3000;
 
-app.get("/", (req, res) => {
+api.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.listen(port, () => {
+api.listen(port, () => {
   console.log("Backend is running on port", port);
 });
